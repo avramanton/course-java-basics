@@ -22,5 +22,17 @@ public class Task02 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        static String getGreetingByHour(int hour) {
+        if (hour < 0 || hour > 23) {
+        } else if (hour < 5) {
+            return "Good night";
+        } else if (hour < 11) {
+            return "Good morning";
+        } else if (hour < 17) {
+            return "Good day";
+        } else {
+            return "Good evening";
+        }
+        return null;
     }
 }

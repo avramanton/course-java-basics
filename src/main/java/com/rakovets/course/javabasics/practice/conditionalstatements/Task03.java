@@ -23,5 +23,18 @@ public class Task03 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        static String getColorHealthPoint(int healthPointPercentage) {
+            int x = (healthPointPercentage);
+            if (x < 0 || x > 100) {
+            } else if (x < 25) {
+                return "RED";
+            } else if (x < 50) {
+                return "ORANGE";
+            } else if (x < 75) {
+                return "YELLOW";
+            } else if (x <= 100) {
+                return "GREEN";
+            }
+            return null;
     }
 }

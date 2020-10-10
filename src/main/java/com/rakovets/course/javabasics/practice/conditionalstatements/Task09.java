@@ -25,5 +25,11 @@ public class Task09 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int a = numberFloors;
+        int b = numberApartmentsPerFloor;
+        int c = apartmentNumber;
+        int x = (c - 1) / (a * b) + 1;
+        int y = ((c - 1) % (a * b)) / b + 1;
+        System.out.println("Porch: " + x + "." + " Floor: " + y);
     }
 }

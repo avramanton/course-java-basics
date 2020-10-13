@@ -40,7 +40,7 @@ public class Task02 extends StandardInputTask {
                 count++;
             }
         }
-        double averageMark = Math.round (((double)(sum * 100) / count))/ 100d;
+        double averageMark = Math.round (((double)(sum * 100) / count)) / 100d;
         System.out.println(averageMark + " " + sum + " " + count);
         return averageMark;
     }
